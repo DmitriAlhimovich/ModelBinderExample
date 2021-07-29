@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 class="display-4">Model Binder Examples</h1>
+
+<ol>
+    <li>Default binding with primitive type in route - <a href="~/products/getById/17">/products/getById/17</a></li>
+    <li>Default binding with primitive type in route and query - <a href="~/products/GetByIdWithQuery/17?includeDescription=true">/products/GetByIdWithQuery/17?includeDescription=true</a></li>
+    <li>Bind model - <a href="~/products/edit/17?title=Apple&price=13.12">/products/edit/17?title=Apple&price=13.12</a></li>
+    <li>BindProperty attribute - <a href="~/productsWithBindProperty/getById/17">/products/getById/17</a></li>
+    <li>BindProperty attribute with query parameter - <a href="~/productsWithBindProperty/GetByIdWithQuery/17?includeDescription=true">/products/GetByIdWithQuery/17?includeDescription=true</a></li>
+    <li>FromQuery attribute - <a href="~/products/getByIdFromQuery?id=prodId999">/products/getByIdFromQuery?id=prodId999</a></li>
+    <li>Custom model binder - <a href="~/products/editWithDiscount/17?title=Apple&price=13.12">/products/edit/17?title=Apple&price=13.12</a></li>
+</ol>
+
